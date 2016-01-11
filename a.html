@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <link rel="stylesheet" type="text/css" href="b.css">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+     <title>startup</title>
+     </head>
+     <body>  <div id="signup" class="panel panel-default col-md-8 col-md-offset-2 page-header">
+    <div class="panel-body">
+      <h2 class="page-header" style="margin-top:0;">Sign up</h2>
+      <form action="/sign/up" method="post" id="frm-signUpForm">
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+              <input type="text" name="username" maxlength="32" id="frm-signUpForm-username" required data-nette-rules='[{"op":":filled","msg":"Please enter your username."},{"op":":minLength","msg":"Username must have at least 3 characters.","arg":3},{"op":":maxLength","msg":"Username can&#39;t have more than 32 characters.","arg":32}]' value="" class="form-control" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-globe fa-fw"></i></span>
+              <select name="country" id="frm-signUpForm-country" class="form-control">
+                <option value="AF">Afghanistan</option>
+                <option value="AX">Aland Islands</option>
+                <option value="AL">Albania</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+              <input type="text" name="email" id="frm-signUpForm-email" required data-nette-rules='[{"op":":filled","msg":"Please enter your email."},{"op":":email","msg":"Email is not valid."}]' value="" class="form-control" placeholder="Your Email">
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+              <input type="text" name="email2" id="frm-signUpForm-email2" required data-nette-rules='[{"op":":filled","msg":"Please enter your email."},{"op":":valid","rules":[{"op":":equal","msg":"Emails do not match!","arg":{"control":"email"}}],"control":"email"}]' value="" class="form-control" placeholder="Re-enter Email">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group nom">
+              <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+              <input type="password" name="password" maxlength="64" id="frm-signUpForm-password" required data-nette-rules='[{"op":":filled","msg":"Please enter your password."},{"op":":minLength","msg":"Password must have at least 5 characters.","arg":5},{"op":":maxLength","msg":"Passoword can&#39;t have more than 64 characters.","arg":64}]' class="form-control" placeholder="Password">
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group nom">
+              <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+              <input type="password" name="password2" id="frm-signUpForm-password2" required data-nette-rules='[{"op":":filled","msg":"Please enter your password."},{"op":":valid","rules":[{"op":":equal","msg":"Passwords do not match!","arg":{"control":"password"}}],"control":"password"}]' class="form-control" placeholder="Re-enter Password">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group nom">
+              <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+              <input type="password" name="password" maxlength="64" id="frm-signUpForm-password" required data-nette-rules='[{"op":":filled","msg":"Please enter your password."},{"op":":minLength","msg":"Password must have at least 5 characters.","arg":5},{"op":":maxLength","msg":"Passoword can&#39;t have more than 64 characters.","arg":64}]' class="form-control" placeholder="Password">
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <div class="input-group nom">
+              <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+              <input type="password" name="password2" id="frm-signUpForm-password2" required data-nette-rules='[{"op":":filled","msg":"Please enter your password."},{"op":":valid","rules":[{"op":":equal","msg":"Passwords do not match!","arg":{"control":"password"}}],"control":"password"}]' class="form-control" placeholder="Re-enter Password">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <input type="submit" name="send" id="frm-signUpForm-send" value="Sign up" class="btn btn-primary btn-sm">
+      </form>
+    </div>
+  </div>
+</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
